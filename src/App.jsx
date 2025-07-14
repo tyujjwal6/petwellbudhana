@@ -79,13 +79,7 @@ export default function App() {
               {/* SEO: Using the actual business name */}
               <h1 className="font-heading text-3xl">{businessInfo.name.split(' ')[0]}</h1>
             </div>
-            <nav className="hidden md:flex items-center gap-8 text-gray-600">
-              <a href="#" className="hover:text-black">About</a>
-              <a href="#" className="flex items-center gap-1 hover:text-black">Treats <ChevronDown size={16} /></a>
-              <a href="#" className="hover:text-black">Training</a>
-              <a href="#" className="hover:text-black">Accessories</a>
-              <a href="#" className="hover:text-black">Grooming</a>
-            </nav>
+
             <button className="border border-black rounded-full px-6 py-2 text-sm font-medium hover:bg-black hover:text-white transition-colors">Book Now</button>
           </header>
 
