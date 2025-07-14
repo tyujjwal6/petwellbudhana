@@ -79,7 +79,7 @@ export default function App() {
               <div className="absolute w-[450px] h-[450px] bg-brand-blue rounded-full transform -rotate-12"></div>
               
               {/* Main Image - styled to fit the new aspect ratio */}
-              <img src={mainDog} alt="Puppies playing" className="relative w-[400px] h-[400px] object-cover rounded-3xl z-10 shadow-lg" />
+              <img src={mainDog} alt="Puppies playing" className="relative w-[400px] h-[400px] object-cover rounded-3xl z-10 " />
               
               {/* Decorative elements positioned relative to the container */}
               <img src={IMAGE_URLS.heroBoxDog} alt="Two puppies" className="absolute top-0 left-0 w-28 h-24 object-cover rounded-2xl border-4 border-white z-20 shadow-md" />
