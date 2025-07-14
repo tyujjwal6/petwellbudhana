@@ -27,12 +27,11 @@ const IMAGE_URLS = {
   beagle: "https://media.istockphoto.com/id/636475496/photo/portrait-of-brown-puppy-with-bokeh-background.jpg?s=612x612&w=0&k=20&c=Ot63dQOYplm0kLJdlSVWbtKGwGkuZfnfdwH5ry9a6EQ=",
   puppyCareBag: "https://cloud7.de/cdn/shop/files/CARRIERS_GROUP_SHOT_COMP_Mobile_1100px.jpg?v=1723452773&width=780",
   collectionCat: "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  frenchBulldogHoodie: "https://static.vecteezy.com/system/resources/thumbnails/029/632/605/small/two-baby-goats-playing-in-the-green-field-free-photo.jpeg",
+  frenchBulldogHoodie: "https://static.vecteezy.com/system/resources/thumbnails/029/632/605/small/two-baby-goats-playing-in-the-green-field-free-photo.jpeg", // Now a goat
   spaniel: "https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   personWithDog: "https://media.istockphoto.com/id/619961796/photo/cute-puppy-and-kitten-on-the-grass-outdoor.jpg?s=612x612&w=0&k=20&c=gzdjAEYibTEVrnvCiJRNXdZKEL2VLOa6deyP1A4R_yY=",
   smallFluffyDog: "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  // Corrected to show 3 bags as per the original design intent
-  foodBags: ["https://i.imgur.com/gkzr276.png", "https://i.imgur.com/L12RA3r.png", "https://i.imgur.com/bWWOy3R.png"],
+  foodBags: ["https://cdn-gacgk.nitrocdn.com/DSVRdlDFGOrFUGrTMTtfhvcydmLcwAOH/assets/images/optimized/rev-f718a3f/jcpacki.com/wp-content/uploads/2023/04/dog-food-bag-1-1024x1024.jpg"],
   manWithDog: "https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   testimonialDog: "https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   parrotIcon: "https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -175,19 +174,36 @@ export default function App() {
               <div className="space-y-4"><h2 className="font-heading text-5xl">THE BEST FOOD FOR YOUR FURRY FRIEND</h2><p className="text-gray-600">To provide your pet balanced and healthy life, to reduce sickness.</p><button className="border border-black rounded-full px-6 py-2 text-sm font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-colors">Order Now <ArrowRight size={16} /></button></div>
             </section>
             
-            <section className="relative bg-brand-yellow my-24 p-8 rounded-3xl flex flex-col md:flex-row items-center">
-              <div className="flex-1 flex justify-around items-end w-full">
-                {IMAGE_URLS.foodBags.map((bag, index) => (
-                  <img key={index} src={bag} alt={`Premium pet food bag ${index + 1}`} className="object-contain" style={{height: `${160 - index*16}px`}} />
-                ))}
-              </div>
-              <div className="flex-1 md:pl-8 mt-8 md:mt-0 text-center md:text-left">
-                <h3 className="font-heading text-4xl">GET OUR ASSISTANCE TO BENEFIT YOUR PET</h3>
-                <p className="mt-2 text-gray-700">Pups's food made with real meat and fish also a good source of antioxidants.</p>
-              </div>
-              {/* SEO: Descriptive alt text */}
-              <img src={IMAGE_URLS.smallFluffyDog} alt="A small fluffy dog looking healthy" className="absolute right-[-40px] bottom-[-20px] w-64 h-auto hidden lg:block" />
-            </section>
+           {/* === Polished & Fixed Assistance Section === */}
+<section className="relative bg-brand-yellow my-24 p-8 lg:pr-32 rounded-3xl flex flex-col md:flex-row items-center">
+
+  {/* Food Bags Container */}
+  <div className="flex-1 flex justify-around items-end w-full">
+    {IMAGE_URLS.foodBags.map((bag, index) => (
+      <img 
+        key={index} 
+        src={bag} 
+        alt={`Premium pet food bag ${index + 1}`} 
+        className="object-contain transition-transform hover:-translate-y-2" 
+        style={{height: `${160 - index * 16}px`}} 
+      />
+    ))}
+  </div>
+
+  {/* Text Content Container */}
+  <div className="flex-1 md:pl-8 mt-8 md:mt-0 text-center md:text-left">
+    <h3 className="font-heading text-4xl">GET OUR ASSISTANCE TO BENEFIT YOUR PET</h3>
+   
+  </div>
+
+  {/* Peeking Dog Image: Now positioned safely without overlapping content. */}
+<img 
+  src={IMAGE_URLS.smallFluffyDog} 
+  alt="A small, healthy fluffy dog" 
+  className="absolute right-4 -bottom- w-32 h-auto hidden lg:block drop-shadow-lg" 
+/>
+
+</section>
             
             <section className="grid md:grid-cols-2 gap-16 py-12 items-start">
               <div>
