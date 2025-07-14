@@ -1,9 +1,10 @@
 import React from 'react';
 import { PawPrint, ChevronDown, Bone, Heart, Fish, Calendar, ArrowRight, CheckCircle2, Cat, Dog, Quote } from 'lucide-react';
+import mainDog from './assets/one.png'; // Importing the main dog image
 
 // Using the updated and final image URLs
 const IMAGE_URLS = {
-  mainDog: "https://images.stockcake.com/public/4/8/2/48273a90-291f-4214-9899-a0dc516be47e_large/puppies-playing-tug-stockcake.jpg",
+
   heroBoxDog: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   beagle: "https://media.istockphoto.com/id/636475496/photo/portrait-of-brown-puppy-with-bokeh-background.jpg?s=612x612&w=0&k=20&c=Ot63dQOYplm0kLJdlSVWbtKGwGkuZfnfdwH5ry9a6EQ=",
   puppyCareBag: "https://cloud7.de/cdn/shop/files/CARRIERS_GROUP_SHOT_COMP_Mobile_1100px.jpg?v=1723452773&width=780",
@@ -78,7 +79,7 @@ export default function App() {
               <div className="absolute w-[450px] h-[450px] bg-brand-blue rounded-full transform -rotate-12"></div>
               
               {/* Main Image - styled to fit the new aspect ratio */}
-              <img src={IMAGE_URLS.mainDog} alt="Puppies playing" className="relative w-[400px] h-[400px] object-cover rounded-3xl z-10 shadow-lg" />
+              <img src={mainDog} alt="Puppies playing" className="relative w-[400px] h-[400px] object-cover rounded-3xl z-10 shadow-lg" />
               
               {/* Decorative elements positioned relative to the container */}
               <img src={IMAGE_URLS.heroBoxDog} alt="Two puppies" className="absolute top-0 left-0 w-28 h-24 object-cover rounded-2xl border-4 border-white z-20 shadow-md" />
@@ -134,9 +135,7 @@ export default function App() {
           <span className="text-xs">GROOMING</span>
           <span className="text-xs">TRAINING</span>
           <span className="text-xs">EXERCISE</span>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 text-xs w-[70px] shadow-md">
-            $13 <span className="text-gray-400">/MO</span>
-          </div>
+
         </div>
       </div>
     </div>
