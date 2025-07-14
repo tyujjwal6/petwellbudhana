@@ -107,7 +107,7 @@ export default function App() {
                 <div className="absolute top-10 right-0 z-20 bg-yellow-300 rounded-full w-32 h-32 flex items-center justify-center text-center font-bold text-yellow-800 text-sm transform -rotate-12 border-2 border-dashed border-yellow-800">BETTER AND <br/> HEALTHY <br/> MAKES TOMORROW</div>
                 <div className="absolute bottom-8 left-0 z-20 bg-[#FFECE2] p-4 rounded-2xl shadow-lg flex items-center gap-4 border border-orange-200">
                   <div className="bg-[#FFA980] p-3 rounded-lg"><Fish className="text-white" size={28} /></div>
-                  <div><h4 className="font-bold">FISH CUTLET</h4><p className="text-xs text-gray-500">Ingredient: Pumpkin, <br/> Meat, Fish Cutlet</p></div>
+              
                 </div>
                 <Bone className="absolute bottom-10 right-4 text-gray-300 transform rotate-45 z-20" size={40} />
               </div>
