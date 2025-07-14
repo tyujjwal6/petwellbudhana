@@ -11,7 +11,7 @@ const IMAGE_URLS = {
   collectionCat: "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   frenchBulldogHoodie: "https://static.vecteezy.com/system/resources/thumbnails/029/632/605/small/two-baby-goats-playing-in-the-green-field-free-photo.jpeg", // Now a goat
   spaniel: "https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  personWithDog: "https://images.pexels.com/photos/6624021/pexels-photo-6624021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  personWithDog: "https://media.istockphoto.com/id/619961796/photo/cute-puppy-and-kitten-on-the-grass-outdoor.jpg?s=612x612&w=0&k=20&c=gzdjAEYibTEVrnvCiJRNXdZKEL2VLOa6deyP1A4R_yY=",
   smallFluffyDog: "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   foodBags: ["https://cdn-gacgk.nitrocdn.com/DSVRdlDFGOrFUGrTMTtfhvcydmLcwAOH/assets/images/optimized/rev-f718a3f/jcpacki.com/wp-content/uploads/2023/04/dog-food-bag-1-1024x1024.jpg"],
   manWithDog: "https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -197,7 +197,7 @@ export default function App() {
           {/* Best Food Section */}
           <section className="grid md:grid-cols-2 items-center gap-12">
             <div className="relative h-[400px]">
-              <div className="absolute w-80 h-80 bg-brand-blue rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            
               <img src={IMAGE_URLS.personWithDog} alt="Person with a dog" className="absolute w-[450px] object-contain bottom-0 left-1/2 -translate-x-1/2 z-10" />
             </div>
             <div className="space-y-4"><h2 className="font-heading text-5xl">THE BEST FOOD FOR YOUR FURRY FRIEND</h2><p className="text-gray-600">To provide your pet balanced and healthy life, to reduce sickness.</p><button className="border border-black rounded-full px-6 py-2 text-sm font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-colors">Order Now <ArrowRight size={16} /></button></div>
