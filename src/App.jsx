@@ -89,8 +89,6 @@ export default function App() {
               <div className="absolute bottom-8 left-0 z-20 bg-[#FFECE2] p-4 rounded-2xl shadow-lg flex items-center gap-4 border border-orange-200">
                 <div className="bg-[#FFA980] p-3 rounded-lg"> <Fish className="text-white" size={28} /> </div>
                 <div>
-                  <h4 className="font-bold">FISH CUTLET</h4>
-                  <p className="text-xs text-gray-500">Ingredient: Pumpkin, <br/> Meat, Fish Cutlet</p>
                 </div>
               </div>
               <Bone className="absolute bottom-10 right-4 text-gray-300 transform rotate-45 z-20" size={40} />
